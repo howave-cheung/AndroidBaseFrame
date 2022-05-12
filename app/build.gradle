@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.bobo.baseframe"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //butterknife 编译处理
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+        //分包
+        multiDexEnabled true
+
+        ndk {
+            //可以根据需要来自行选择并添加对应cpu类型的.so库。
+            abiFilters 'x86', 'armeabi', 'armeabi-v7a'
+            //还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+    }
+
+    viewBinding { //开启viewBind
+        enabled = true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/gradle/incremental.annotation.processors'
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // 标准包
+    implementation rootProject.ext.supportLibs
+    // retrofit
+    implementation rootProject.ext.retrofitLibs
+    // rxJava
+    implementation rootProject.ext.rxJavaLibs
+    // glide
+    implementation rootProject.ext.glideLibs
+    // butterknife
+    implementation rootProject.ext.butterknifeLibs
+    // 数据库
+    implementation rootProject.ext.roomLibs
+    // 常用包
+    implementation rootProject.ext.commonlyLibs
+
+}

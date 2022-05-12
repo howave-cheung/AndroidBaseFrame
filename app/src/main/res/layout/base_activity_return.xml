@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/app_blue">
+
+        <ImageView
+            android:id="@+id/base_return_activity_left_iv"
+            android:layout_width="@dimen/dp43"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/dp13"
+            android:paddingEnd="@dimen/dp13"
+            android:src="@mipmap/ic_back"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/base_return_activity_title_tv"
+            android:layout_width="@dimen/dp250"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/sp19"
+            tools:text="标题" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/base_return_activity_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/line"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/base_return_activity_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

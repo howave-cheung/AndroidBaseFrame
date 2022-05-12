@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/super_recycler_view_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    app:srlEnableLoadMore="false"
+    app:srlEnableNestedScrolling="true"
+    app:srlEnableRefresh="false">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/super_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"/>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

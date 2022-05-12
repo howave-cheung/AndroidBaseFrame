@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#EB4242</color>
+
+    <color name="white">#ffffff</color>
+    <color name="query_green">#20B86B</color>
+    <color name="query_gray">#575B5B</color>
+
+    <color name="gray">#808080</color>
+
+    <color name="text_title">#0C0C0C</color>
+
+    <color name="text_main">#FF575B5B</color>
+
+    <color name="text_hint">#FFC1C9CA</color>
+
+    <color name="app_green">#20B86B</color>
+    <color name="app_deep_green">#169E62</color>
+    <color name="app_bg_green">#E2FFEF</color>
+
+    <color name="word_gray">#575B5B</color>
+
+    <color name="word_bg_gray">#F4F7F6</color>
+
+
+    <color name="line">#33000000</color>
+
+    <color name="app_line">#CAD2CE</color>
+
+    <color name="info_view_title_bg">#F0F2F5</color>
+
+    <color name="app_cyan">#44BEC4</color>
+
+    <color name="app_white">#FFFFFF</color>
+    <color name="app_red">#EB4242</color>
+
+    <color name="app_transparent">#00000000</color>
+    <color name="app_translucent">#50000000</color>
+
+    <color name="transparent90">#90000000</color>
+    <color name="app_red_99">#99EB4242</color>
+    <color name="app_red_50">#50EB4242</color>
+
+    <color name="bg">#F1F3F3</color>
+
+    <color name="meeting_menu_select">#F7F8F8</color>
+
+    <color name="issue_enclosure_filename">#ff575b5b</color>
+
+    <color name="manage_information">#9EA8A9</color>
+    <color name="manage_information_text_color">#575B5B</color>
+    <color name="manage_information_text_bg">#F7F8F8</color>
+
+    <color name="disable_text">#C1C9CA</color>
+    <color name="undisable_text">#575B5B</color>
+
+    <color name="select_text">#1E81F1</color>
+    <color name="select_text_bg">#EDF5FF</color>
+
+    <color name="list_text">#FF9500</color>
+    <color name="list_text_bg">#FFEFDA</color>
+
+    <color name="list_text2">#A6AE01</color>
+    <color name="list_text_bg2">#F8FBCC</color>
+
+    <color name="unchecked_text">#FF575B5B</color>
+    <color name="unchecked_text_bg">#fff4f7f6</color>
+
+    <color name="mian_select_bg">#fff7f8f8</color>
+
+    <color name="app_blue">#1E81F1</color>
+
+    <color name="sw_bg">#E0F1FF</color>
+    <color name="sw_text_color">#007FE9</color>
+    <color name="fw_bg">#E2F8FE</color>
+    <color name="fw_text_color">#1AC1D1</color>
+
+    <color name="color1">#1AC1D1</color>
+    <color name="color2">#20B86B</color>
+    <color name="color3">#F8796F</color>
+    <color name="color4">#F8D83C</color>
+    <color name="color5">#1E81F1</color>
+    <color name="text_blue">#007FE9</color>
+    <color name="blue_bg">#EAF4FF</color>
+
+    <color name="color6">#AD28FF</color>
+    <color name="color7">#01B2E4</color>
+
+    <color name="colorStatusNormal">#20B86B</color>
+    <color name="colorStatusRemind">#1AC1D1</color>
+    <color name="colorStatusSuspend">#C1C5CA</color>
+    <color name="colorStatusTimeout">#EA4651</color>
+    <color name="colorStatusWarning">#FF7B02</color>
+    <color name="light_orange">#FFEFDA</color>
+    <color name="light_green">#E6FCF2</color>
+    <color name="colorStatisticsBlue">#28C3FF</color>
+    <color name="colorStatisticsGreen">#29E3B4</color>
+    <color name="colorStatisticsOrange">#FFD015</color>
+    <color name="colorBlue429DFF">#429DFF</color>
+    <color name="colorGrayA1">#A1A1A1</color>
+
+    <color name="color_polygon_solid">#ff0000</color>
+    <color name="color_polygon_solid_trans">#55ff0000</color>
+    <color name="color_polygon_line">#FFEB3B</color>
+    <color name="color_bar_chart">#49d3f2</color>
+
+</resources>

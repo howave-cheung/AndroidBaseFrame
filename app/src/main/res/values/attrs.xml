@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SuperRecyclerView">
+        <attr name="srv_error_res_Id" format="reference" />
+        <attr name="srv_empty_res_Id" format="reference" />
+        <attr name="srv_loading_res_Id" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="maxHeight_RecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

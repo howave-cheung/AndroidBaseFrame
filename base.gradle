@@ -1,0 +1,87 @@
+ext {
+
+    dependVersion = [
+            room     : "2.0.0",
+            retrofit : "2.4.0",
+            rxJava   : "2.1.12",
+            rxAndroid: "2.1.1",
+            rxLife   : "4.0.2",
+            glide    : "4.10.0",
+            butterknife    : "10.2.3"
+    ]
+
+    supportLib = [
+            appcompat                : "androidx.appcompat:appcompat:1.1.0",
+            design                   : "com.google.android.material:material:1.3.0",
+            cardview                 : "androidx.cardview:cardview:1.0.0",
+            multidex                 : "androidx.multidex:multidex:2.0.1",
+
+            implementation           : "androidx.constraintlayout:constraintlayout:1.1.3",
+            testImplementation       : "junit:junit:4.12",
+            androidTestImplementation: "androidx.test.ext:junit:1.1.0",
+            androidTestImplementation: "androidx.test.espresso:espresso-core:3.1.1"
+    ]
+
+    retrofitLib = [
+            retrofit       : "com.squareup.retrofit2:retrofit:$dependVersion.retrofit",
+            retrofit_gson  : "com.squareup.retrofit2:converter-gson:$dependVersion.retrofit",
+            retrofit_rxjava: "com.squareup.retrofit2:adapter-rxjava:$dependVersion.retrofit",
+            retrofit_log   : "com.squareup.okhttp3:logging-interceptor:3.10.0",
+    ]
+
+    rxJavaLib = [
+            rxJava       : "io.reactivex.rxjava2:rxjava:$dependVersion.rxJava",
+            rxAndroid    : "io.reactivex.rxjava2:rxandroid:$dependVersion.rxAndroid",
+            rxLife       : "com.trello.rxlifecycle4:rxlifecycle:$dependVersion.rxLife",
+            rxLife_common: "com.trello.rxlifecycle4:rxlifecycle-components:$dependVersion.rxLife",
+    ]
+
+    glideLib = [
+            glide          : "com.github.bumptech.glide:glide:$dependVersion.glide",
+            transformations: "jp.wasabeef:glide-transformations:2.0.2",
+            glideCompiler  : "com.github.bumptech.glide:compiler:$dependVersion.glide"
+    ]
+
+    butterknifeLib = [
+            butterknife: "com.jakewharton:butterknife:$dependVersion.butterknife",
+            butterknifeCompiler : "com.jakewharton:butterknife-compiler:$dependVersion.butterknife"
+    ]
+
+
+    roomLib = [
+            room         : "androidx.room:room-runtime:$dependVersion.room",
+            roomProcessor: "androidx.room:room-compiler:$dependVersion.room",
+    ]
+
+    commonlyLib = [
+            "MMKV"                       : 'com.tencent:mmkv-static:1.1.0',
+            // 权限控制
+            rxpermissions                : "com.github.tbruyelle:rxpermissions:0.12",
+            // Logcat
+            logCat                       : "com.lazy.logging:library:1.3.1",
+            // 适配器
+            baseRecyclerViewAdapterHelper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42",
+            // 下拉刷新控件
+            smartRefreshLayout           : "com.scwang.smartrefresh:SmartRefreshLayout:1.1.3",
+            // TabLayout
+            tabLayout                    : "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar",
+            // eventbus
+            eventbus                     : "org.greenrobot:eventbus:3.1.1",
+            // 圆角布局
+            rclayout                     : "com.gcssloop.widget:rclayout:1.8.1",
+            // 圆形图片
+            circleimageview              : "de.hdodenhof:circleimageview:3.1.0",
+            // 弹窗
+            lDialog                      : "com.github.liys666666:LDialog:V2.0.1",
+            // RecyclerViewDivider
+            recycler_view_divider        : "com.github.yangsanning:RecyclerViewDivider:1.0.0",
+    ]
+
+    supportLibs = supportLib.values()
+    retrofitLibs = retrofitLib.values()
+    rxJavaLibs = rxJavaLib.values()
+    glideLibs = glideLib.values()
+    butterknifeLibs = butterknifeLib.values()
+    roomLibs = roomLib.values()
+    commonlyLibs = commonlyLib.values()
+}
