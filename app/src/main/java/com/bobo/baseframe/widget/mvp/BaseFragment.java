@@ -102,7 +102,28 @@ public abstract class BaseFragment<VB extends ViewBinding> extends RxFragment im
             EventBus.getDefault().register(this);
         }
 
+        if (mRootView != null && mRootView instanceof ViewGroup) {
+            openViewGroup((ViewGroup) mRootView);
+        }
+
         return mRootView;
+    }
+
+    /**
+     * 绑定 fragment 点击事件
+     * @param viewGroup
+     */
+    private void openViewGroup(ViewGroup viewGroup) {
+        for (int i = 0; i < viewGroup.getChildCount(); i++) {
+            View child = viewGroup.getChildAt(i);
+            if (child instanceof ViewGroup) {
+                openViewGroup((ViewGroup) child);
+            }
+
+            if (child.isContextClickable()){
+                child.setOnClickListener(this);
+            }
+        }
     }
 
     /**
