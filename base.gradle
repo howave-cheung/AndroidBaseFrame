@@ -4,7 +4,7 @@ ext {
             room     : "2.0.0",
             retrofit : "2.4.0",
             rxJava   : "2.1.12",
-            rxAndroid: "2.0.2",
+            rxAndroid: "2.1.1",
             rxLife   : "4.0.2",
             glide    : "4.10.0",
             butterknife    : "10.2.3"

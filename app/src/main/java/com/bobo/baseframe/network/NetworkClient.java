@@ -15,10 +15,12 @@ import com.bobo.baseframe.widget.hepler.MMKVUtil;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.lazy.library.logging.Logcat;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
+
 import okhttp3.Cache;
 import okhttp3.CacheControl;
 import okhttp3.Headers;

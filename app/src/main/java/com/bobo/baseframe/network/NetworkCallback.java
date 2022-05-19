@@ -4,21 +4,29 @@ import com.bobo.baseframe.app.AppManager;
 import com.bobo.baseframe.widget.utils.PageUtils;
 import com.bobo.baseframe.widget.utils.ToastUtils;
 
+import org.jetbrains.annotations.NotNull;
+
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 import retrofit2.HttpException;
-import rx.Subscriber;
 
 /**
  * @ClassName NetworkCallback
  * @Description 网络返回的回调接口，可以在此对异常数据进行处理
  */
-public abstract class NetworkCallback<T> extends Subscriber<T> {
+public abstract class NetworkCallback<T> implements Observer<T> {
 
     public abstract void onSuccess(T data);
 
     public abstract void onFailure(int code, String msg);
 
     @Override
-    public void onCompleted() {
+    public void onSubscribe(@NotNull Disposable d) {
+
+    }
+
+    @Override
+    public void onComplete() {
 
     }
 

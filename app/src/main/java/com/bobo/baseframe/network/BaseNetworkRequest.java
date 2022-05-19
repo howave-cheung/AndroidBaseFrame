@@ -1,5 +1,6 @@
 package com.bobo.baseframe.network;
 
+
 import androidx.annotation.NonNull;
 
 import org.jetbrains.annotations.NotNull;
@@ -11,8 +12,6 @@ import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
-
-import rx.functions.Func1;
 
 
 /**
@@ -29,7 +28,7 @@ public class BaseNetworkRequest {
     public class NetworkResultFun<T> implements Function<NetworkResult<T>, T> {
 
         @Override
-        public T apply(@NonNull NetworkResult<T> tNetworkResult) throws Exception {
+        public T apply(@NotNull NetworkResult<T> tNetworkResult) throws Exception {
             if (tNetworkResult.getAckCode() != NetworkCode.CODE_SUCCESS_CRITICAL && tNetworkResult.getAckCode() != NetworkCode.CODE_SUCCESS) {
                 throw new ApiException(tNetworkResult.getAckCode(), tNetworkResult.getMessage());
             }
@@ -45,7 +44,7 @@ public class BaseNetworkRequest {
      */
     public class NetworkResultFun1<T> implements Function<NetworkResult<T>, NetworkResult<T>> {
         @Override
-        public NetworkResult<T> apply(@NonNull NetworkResult<T> tNetworkResult) throws Exception {
+        public NetworkResult<T> apply(@NotNull NetworkResult<T> tNetworkResult) throws Exception {
             if (tNetworkResult.getAckCode() != NetworkCode.CODE_SUCCESS_CRITICAL && tNetworkResult.getAckCode() != NetworkCode.CODE_SUCCESS) {
                 throw new ApiException(tNetworkResult.getAckCode(), tNetworkResult.getMessage());
             }
@@ -59,7 +58,6 @@ public class BaseNetworkRequest {
      * @param <T> 具体业务所需的数据类型
      */
     public class NetworkResultFun2<T> implements Function<NetworkResult<T>, T> {
-
 
         @Override
         public T apply(@NotNull NetworkResult<T> tNetworkResult) throws Exception {
@@ -100,4 +98,5 @@ public class BaseNetworkRequest {
                     .observeOn(AndroidSchedulers.mainThread());
         }
     }
+
 }

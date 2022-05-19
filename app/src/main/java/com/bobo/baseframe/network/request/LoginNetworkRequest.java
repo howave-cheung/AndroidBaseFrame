@@ -6,7 +6,6 @@ import com.bobo.baseframe.network.NetworkClient;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 
-
 /**
  * @ClassName LoginNetworkRequest
  * @Description 登录网络请求工具
