@@ -169,4 +169,23 @@ public class PageUtils {
         startToolbarActivity(activity, ImageFragment.class, bundle, "图片查看");
     }
 
+    /**
+     * 跳转登录页
+     */
+    public static void startLoginActivity(Activity activity) {
+        startLoginActivity(activity, false);
+    }
+
+    /**
+     * 跳转登录页
+     *
+     * @param silent 是否静默登录
+     */
+    public static void startLoginActivity(Activity activity, boolean silent) {
+        activity.finish();
+//        Intent intent = new Intent(activity, LoginActivity.class);
+//        intent.putExtra(EXTRA_SILENT_LOGIN, silent);
+//        activity.startActivity(intent);
+    }
+
 }

@@ -9,6 +9,8 @@ import java.util.prefs.Preferences;
  * @Remark: 使用MMKV替代SharedPreferences 对使用进行简单封装
  */
 public class MMKVUtil {
+    public final String TOKEN_CODE = "token";
+    public final String BASE_API = "baseApi";
 
     private static MMKVUtil instance;
 
@@ -25,6 +27,22 @@ public class MMKVUtil {
 
     public static void destroy() {
         instance = null;
+    }
+
+    public String getToken() {
+        return getString(TOKEN_CODE);
+    }
+
+    public void setToken(String token) {
+        put(TOKEN_CODE,token);
+    }
+
+    public String getBaseApi() {
+        return getString(BASE_API);
+    }
+
+    public void setBaseApi(String baseApi) {
+        put(BASE_API,baseApi);
     }
 
     public void put(String key, Object value) {

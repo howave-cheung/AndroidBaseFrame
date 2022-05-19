@@ -1,4 +1,4 @@
-package com.bobo.baseframe.app;
+package com.bobo.baseframe.network;
 
 /**
  * @ClassName NetworkCode

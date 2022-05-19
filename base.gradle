@@ -4,7 +4,7 @@ ext {
             room     : "2.0.0",
             retrofit : "2.4.0",
             rxJava   : "2.1.12",
-            rxAndroid: "2.1.1",
+            rxAndroid: "2.0.2",
             rxLife   : "4.0.2",
             glide    : "4.10.0",
             butterknife    : "10.2.3"
@@ -75,6 +75,8 @@ ext {
             lDialog                      : "com.github.liys666666:LDialog:V2.0.1",
             // RecyclerViewDivider
             recycler_view_divider        : "com.github.yangsanning:RecyclerViewDivider:1.0.0",
+            // utilcode 工具
+            utilcode                     : "com.blankj:utilcode:1.29.0"
     ]
 
     supportLibs = supportLib.values()
