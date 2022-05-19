@@ -12,6 +12,8 @@ import androidx.multidex.MultiDex;
 import com.bobo.baseframe.widget.utils.ResUtils;
 import com.lazy.library.logging.Builder;
 import com.lazy.library.logging.Logcat;
+import com.tencent.mmkv.MMKV;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
@@ -54,6 +56,8 @@ public class MyApplication extends Application implements Application.ActivityLi
         initialize();
         // 初始化MultiDex
         MultiDex.install(this);
+        // 初始化 MMKV
+        MMKV.initialize(this);
     }
 
 
