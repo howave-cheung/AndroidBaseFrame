@@ -101,6 +101,7 @@
     <dimen name="sp99">99sp</dimen>
 
     <dimen name="dp0_33">0.33dp</dimen>
+    <dimen name="dp0_66">0.66dp</dimen>
 
     <dimen name="dp1">1dp</dimen>
     <dimen name="dp2">2dp</dimen>

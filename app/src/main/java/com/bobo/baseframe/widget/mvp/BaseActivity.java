@@ -143,7 +143,9 @@ public abstract class BaseActivity<VB extends ViewBinding> extends RxAppCompatAc
         return res;
     }
 
-    protected abstract int getLayoutId();
+    protected int getLayoutId(){
+        return 0;
+    };
 
     protected abstract void initView();
 

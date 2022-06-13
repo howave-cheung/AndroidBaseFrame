@@ -1,14 +1,18 @@
 package com.bobo.baseframe.widget.mvp;
 
 import android.os.Bundle;
+
+import androidx.viewbinding.ViewBinding;
+
 import org.jetbrains.annotations.Nullable;
 
 /**
  * @ClassName BaseMvpActivity
  * @Description 通用的activity
  */
-public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseActivity implements BaseView {
+public abstract class BaseMvpActivity<VB extends ViewBinding,P extends BasePresenter> extends BaseActivity implements BaseView {
     public P mPresenter;
+    public VB mViewBinding;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -17,5 +21,6 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseActiv
     }
 
     protected abstract P getPresenter();
+    protected abstract VB getViewBinding();
 
 }

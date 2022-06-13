@@ -171,7 +171,9 @@ public abstract class BaseFragment<VB extends ViewBinding> extends RxFragment im
         }
     }
 
-    protected abstract int getLayoutId();
+    protected int getLayoutId(){
+        return 0;
+    };
 
     protected abstract void initView();
 
