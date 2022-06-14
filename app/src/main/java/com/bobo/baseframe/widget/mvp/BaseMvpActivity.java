@@ -17,6 +17,7 @@ public abstract class BaseMvpActivity<VB extends ViewBinding,P extends BasePrese
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         mPresenter=getPresenter();
+        mViewBinding = getViewBinding();
         super.onCreate(savedInstanceState);
     }
 

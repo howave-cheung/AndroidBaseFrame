@@ -91,22 +91,26 @@ public abstract class BaseFragment<VB extends ViewBinding> extends RxFragment im
             }
         }
 
-        ViewGroup parent = (ViewGroup) mRootView.getParent();
+        initBase(mRootView);
+
+        return mRootView;
+    }
+
+    public void initBase(View rootView){
+        ViewGroup parent = (ViewGroup) rootView.getParent();
         if (parent != null) {
-            parent.removeView(mRootView);
+            parent.removeView(rootView);
         }
 
-        unbinder = ButterKnife.bind(this, mRootView);
+        unbinder = ButterKnife.bind(this, rootView);
 
         if (isOpenEventBus()){
             EventBus.getDefault().register(this);
         }
 
-        if (mRootView != null && mRootView instanceof ViewGroup) {
-            openViewGroup((ViewGroup) mRootView);
+        if (rootView != null && rootView instanceof ViewGroup) {
+            openViewGroup((ViewGroup) rootView);
         }
-
-        return mRootView;
     }
 
     /**

@@ -23,7 +23,13 @@ public abstract class BaseMvpFragment<VB extends ViewBinding,P extends BasePrese
         }else{
             mPresenter = getPresenter();
         }
-        return super.onCreateView(inflater, container, savedInstanceState);
+
+        if (mViewBinding == null){
+            mViewBinding = getViewBinding(inflater,container);
+            super.initBase(mViewBinding.getRoot());
+        }
+
+        return mViewBinding.getRoot();
     }
 
     protected abstract P getPresenter();
